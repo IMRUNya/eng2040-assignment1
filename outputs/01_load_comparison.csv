@@ -1,0 +1,4 @@
+approach,rows_to_python,data_in_python_mb,seconds,peak_rss_growth_mb,payment_total_centavos,payment_total_ok
+"A: aggregate in SQLite, then join (used)",20000,17.61,0.13,35.8,280524473.0,True
+"B: load 5 tables into pandas, aggregate there",103503,36.53,0.13,39.9,280524473.0,True
+"C: join all, then aggregate (naive)",23797,,,,356439654.0,False

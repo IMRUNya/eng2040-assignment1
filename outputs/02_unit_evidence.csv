@@ -1,0 +1,7 @@
+column,range,items,match_as_is,match_after_divide_1000
+price,"(0.0, 1000.0]",15986,15189,0
+price,"(1000.0, 6500.0]",143,136,0
+price,"(6500.0, inf]",309,0,301
+freight_value,"(-0.01, 100.0]",15971,15181,1
+freight_value,"(100.0, 500.0]",102,96,0
+freight_value,"(500.0, inf]",365,0,349

@@ -1,0 +1,7 @@
+scenario,orders,late_rate,ci,top_3_states_by_excess_late,top_3_states_by_rate_n300,orders_unknown_state
+main: reliable labels,16481,0.0672,0.063-0.071,"RJ, BA, CE","BA, RJ, ES",742
++ unknown status with plausible dates,17261,0.0679,0.064-0.072,"RJ, BA, CE","BA, RJ, ES",742
++ cancelled with plausible dates,17212,0.0666,0.063-0.070,"RJ, BA, CE","BA, RJ, ES",742
++ impossible chronology at face value,17273,0.0641,0.061-0.068,"RJ, BA, CE","BA, RJ, ES",742
+only orders with no repaired field,13272,0.068,0.064-0.072,"RJ, BA, PE","BA, RJ, RS",0
+zip-recovered states set to unknown,16481,0.0672,0.063-0.071,"RJ, BA, CE","BA, RJ, RS",1676

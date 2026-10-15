@@ -1,0 +1,65 @@
+feature,meaning,source
+lead_days,calendar days from approval to the estimated delivery date,"approved_at (or purchase), estimated date"
+approval_wait_hours,hours from purchase to approval (median if unknown),"purchase, approval"
+approval_wait_missing,1 if purchase or approval time is unknown,"purchase, approval"
+approval_time_imputed,1 if approval time is unknown and purchase time is used,approval
+approval_month,"month of approval, 1-12",approval
+approval_weekday,"weekday of approval, 0 = Monday",approval
+approval_hour,"hour of approval, local clock",approval
+estimate_weekday,weekday of the estimated date,estimated date
+n_items,number of items,items
+n_products,number of different products,items
+n_sellers,number of different sellers,items
+price_total,"sum of item prices, BRL",items
+price_max,"most expensive item, BRL",items
+freight_total,"sum of freight, BRL",items
+weight_total_kg,"total product weight, kg",products
+volume_total_l,"total product volume, litres",products
+max_side_cm,"longest side of any product, cm",products
+photos_mean,mean number of product photos,products
+description_length_mean,"mean product description length, characters",products
+catalogue_missing_share,share of items with a missing catalogue field (median used),products
+price_imputed_share,share of items whose price was missing and imputed,items
+seller_same_state_share,share of items sold from the customer's state,"sellers, customers"
+seller_in_sp_share,share of items sold from SP,sellers
+seller_state_unknown_share,share of items whose seller state is unknown,sellers
+freight_share,freight / (price + freight),items
+category_auto,1 if the most expensive item is in category 'auto',products
+category_bed_bath_table,1 if the most expensive item is in category 'bed_bath_table',products
+category_computers_accessories,1 if the most expensive item is in category 'computers_accessories',products
+category_furniture_decor,1 if the most expensive item is in category 'furniture_decor',products
+category_health_beauty,1 if the most expensive item is in category 'health_beauty',products
+category_housewares,1 if the most expensive item is in category 'housewares',products
+category_other,1 if the most expensive item is in category 'other',products
+category_sports_leisure,1 if the most expensive item is in category 'sports_leisure',products
+category_telephony,1 if the most expensive item is in category 'telephony',products
+category_unknown,1 if the most expensive item is in category 'unknown',products
+category_watches_gifts,1 if the most expensive item is in category 'watches_gifts',products
+state_AC,1 if the customer state is AC,customers
+state_AL,1 if the customer state is AL,customers
+state_AM,1 if the customer state is AM,customers
+state_AP,1 if the customer state is AP,customers
+state_BA,1 if the customer state is BA,customers
+state_CE,1 if the customer state is CE,customers
+state_DF,1 if the customer state is DF,customers
+state_ES,1 if the customer state is ES,customers
+state_GO,1 if the customer state is GO,customers
+state_MA,1 if the customer state is MA,customers
+state_MG,1 if the customer state is MG,customers
+state_MS,1 if the customer state is MS,customers
+state_MT,1 if the customer state is MT,customers
+state_PA,1 if the customer state is PA,customers
+state_PB,1 if the customer state is PB,customers
+state_PE,1 if the customer state is PE,customers
+state_PI,1 if the customer state is PI,customers
+state_PR,1 if the customer state is PR,customers
+state_RJ,1 if the customer state is RJ,customers
+state_RN,1 if the customer state is RN,customers
+state_RO,1 if the customer state is RO,customers
+state_RR,1 if the customer state is RR,customers
+state_RS,1 if the customer state is RS,customers
+state_SC,1 if the customer state is SC,customers
+state_SE,1 if the customer state is SE,customers
+state_SP,1 if the customer state is SP,customers
+state_TO,1 if the customer state is TO,customers
+state_unknown,1 if the customer state is unknown,customers

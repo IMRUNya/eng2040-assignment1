@@ -1,0 +1,9 @@
+table,rows,columns,primary_key
+category_translation,73,2,product_category_name
+customers,20000,5,customer_id
+order_items,22662,7,"order_id, order_item_id"
+order_payments,20875,5,"order_id, payment_sequential"
+order_reviews,19966,7,"review_id, order_id"
+orders,20000,8,order_id
+products,11334,9,product_id
+sellers,2071,4,seller_id

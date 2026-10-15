@@ -1,0 +1,33 @@
+table,column,rule,values_changed
+order_items,freight_value,negative -> absolute value,458
+order_items,freight_value,unit error: freight > 500 -> / 1000,473
+order_items,price,negative -> absolute value,408
+order_items,price,"unit error: price > 6,500 -> / 1000",416
+orders,customer_city,"strip spaces, lower case",860
+orders,customer_state,'ZZ'/missing -> state of zip prefix,1132
+orders,customer_state,placeholder -> missing,1
+orders,customer_state,"strip spaces, upper case",877
+orders,customer_zip_code_prefix,placeholder -> missing,900
+orders,order_approved_at,impossible date -> missing,152
+orders,order_delivered_carrier_date,impossible date -> missing,149
+orders,order_delivered_customer_date,impossible date -> missing,161
+orders,order_estimated_delivery_date,impossible date -> missing,170
+orders,order_purchase_timestamp,impossible date -> missing,165
+orders,order_status,"strip spaces, lower case",783
+products,product_category_name,placeholder -> missing,385
+products,product_category_name,"strip spaces, lower case",370
+products,product_description_lenght,-1 placeholder -> missing,136
+products,product_height_cm,negative -> absolute value,103
+products,product_height_cm,unit error: > 1000 -> / 1000,92
+products,product_length_cm,negative -> absolute value,102
+products,product_length_cm,unit error: > 1000 -> / 1000,94
+products,product_name_lenght,-1 placeholder -> missing,112
+products,product_photos_qty,-1 placeholder -> missing,146
+products,product_weight_g,negative -> absolute value,72
+products,product_weight_g,unit error: > 45000 -> / 1000,89
+products,product_width_cm,negative -> absolute value,95
+products,product_width_cm,unit error: > 1000 -> / 1000,84
+sellers,seller_city,"strip spaces, lower case",115
+sellers,seller_state,'ZZ'/missing -> state of zip prefix,156
+sellers,seller_state,"strip spaces, upper case",2029
+sellers,seller_zip_code_prefix,placeholder -> missing,102

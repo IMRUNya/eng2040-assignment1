@@ -1,0 +1,7 @@
+step,seconds,peak_rss_growth_mb,estimated_peak_mb,rows_out,saved_mb,temporary_mb,outputs
+0 build database,0.22,182.7,60.3,116981.0,24.36,0.0,00_marketplace.sqlite
+1 load one row per order,0.19,35.8,19.8,20000.0,3.36,5.29,"01_orders_loaded.parquet, 01_checks.csv, 01_relationships.csv, 01_tables.csv, 01_load_comparison.csv"
+2 clean and label,0.38,64.2,65.0,20000.0,6.83,0.0,"02_orders_clean.parquet, 02_items_clean.parquet, 02_change_log.csv, 02_change_summary.csv, 02_issues.csv, 02_label_accounting.csv, 02_unit_evidence.csv, 02_payment_reconciliation.csv, 02_size_evidence.csv"
+3 exploratory analysis,0.45,62.6,40.0,16481.0,0.25,0.0,"fig1_delays.png, fig2_lead_time.png, fig3_states.png, 03_q1_summary.csv, 03_state_priority.csv, 03_sensitivity.csv, fig1_delay_histogram.csv, fig1_monthly_late_rate.csv, fig2_lead_time_all.csv, fig2_lead_time_region.csv, fig3_state_late_rate.csv"
+4 features,0.21,45.1,30.0,16481.0,1.17,0.0,"04_features.parquet, 04_labels.csv, 04_feature_dictionary.csv, 04_exclusions.csv, 04_feature_label_correlation.csv"
+total,1.45,182.7,65.0,,35.98,5.29,outputs/

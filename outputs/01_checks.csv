@@ -1,0 +1,12 @@
+check,pipeline,source,ok
+rows = orders,20000.0,20000.0,True
+order_id unique,1.0,1.0,True
+item rows,22662.0,22662.0,True
+payment rows,20875.0,20875.0,True
+review rows,19966.0,19966.0,True
+price total (BRL),54446205.769999996,54446205.77,True
+freight total (BRL),10515059.68,10515059.68,True
+payment total (centavos),280524473.0,280524473.0,True
+orders with customer record,19231.0,19231.0,True
+same item totals as approach B,1.0,1.0,True
+same payment totals as approach B,1.0,1.0,True

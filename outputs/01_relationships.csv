@@ -1,0 +1,11 @@
+relationship,unmatched_rows
+orders -> customers,769
+customers -> orders,769
+order_items -> orders,0
+order_items -> products,910
+order_items -> sellers,893
+order_payments -> orders,0
+order_reviews -> orders,0
+orders without items,142
+orders without payments,0
+orders without reviews,147

@@ -1,0 +1,6 @@
+,0
+orders in source,20000
+not labelled (see 02_label_accounting.csv),3519
+labelled but no items,0
+labelled but no approval or purchase time,0
+retained in feature table,16481

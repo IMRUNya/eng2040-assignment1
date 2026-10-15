@@ -1,0 +1,37 @@
+table,field,problem,rows
+orders,order_status,spaces / upper case,783
+orders,order_status,'not_reported' (unknown outcome),804
+orders,order_status,cancelled but has a delivery date,733
+orders,5 date columns,'2018-02-30 10:00:00' placeholder,797
+orders,delivered date,exactly 7 days before approval,803
+orders,delivered date,before approval (other),9
+orders,customer_id,no customer record,769
+customers,customer_state,'ZZ' or missing,1185
+customers,customer_state,lower case,914
+customers,customer_city,upper case with spaces,895
+customers,zip prefix,'12A?0' placeholder,920
+customers,customer_unique_id,missing,885
+order_items,price,negative,408
+order_items,price,"above 6,500 BRL (x1000)",416
+order_items,price,missing,439
+order_items,freight_value,negative,458
+order_items,freight_value,above 500 BRL (x1000),473
+order_items,freight_value,missing,427
+order_items,product_id,not in products,910
+order_items,seller_id,not in sellers,893
+products,category,upper case with spaces,370
+products,category,'unmapped_category' or missing,894
+products,name / description / photos,-1 placeholder,394
+products,weight / dimensions,negative,372
+products,weight / dimensions,x1000 (>45 kg or >1000 cm),359
+products,any attribute,missing,1284
+sellers,seller_state,'zz' or missing,156
+sellers,seller_state,lower case,2029
+sellers,seller_city,upper case,115
+order_payments,payment_value,negative,975
+order_payments,payment_value,missing,945
+order_payments,payment_type,spaces / upper case,904
+order_payments,payment_type,'unclassified_payment',913
+order_payments,payment_installments,-1,929
+order_reviews,review_score,0 or 8 (outside 1-5),1037
+order_reviews,review_id,duplicated,25

@@ -1,0 +1,15 @@
+,0
+labelled orders,16481.0
+late orders,1107.0
+late rate,0.0672
+ci low,0.0634
+ci high,0.0711
+delay median (days),7.0
+delay mean (days),10.5736
+delay p75 (days),13.0
+delay p90 (days),22.0
+delay max (days),188.0
+late by more than 7 days (share of late),0.4463
+late by 1-3 days (share of late),0.2918
+on-time: median days early,13.0
+on-time: delivered on the estimated day,232.0

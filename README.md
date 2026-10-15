@@ -38,7 +38,7 @@ A full run takes about 2 seconds of pipeline time (about 10 s with kernel start)
 | `sql/01_relationships.sql` | Executed SQL: key and orphan checks |
 | `sql/01_naive_join.sql` | Executed SQL: the naive join used only to show the fan-out |
 | `sql/02_items.sql` | Executed SQL: item rows for cleaning |
-| `outputs/` | Output data of every step (below), created by the run |
+| `outputs/` | Output data of every step (below) from my run; the notebook recreates it |
 | `pyproject.toml`, `uv.lock` | Locked environment (submitted folder only) |
 | `report/` | LaTeX source of the report (submitted folder only) |
 
@@ -46,7 +46,7 @@ A full run takes about 2 seconds of pipeline time (about 10 s with kernel start)
 
 | Step | Notebook section | Input | Output | One row is |
 |---|---|---|---|---|
-| 0 Build database | Step 0 | `data/raw.sql` | `outputs/00_marketplace.sqlite` (intermediate, can be deleted after the run) | table rows as supplied |
+| 0 Build database | Step 0 | `data/raw.sql` | `outputs/00_marketplace.sqlite` (intermediate, 24 MB, not in the GitHub repo: Step 0 creates it from `raw.sql`) | table rows as supplied |
 | 1 Load | Step 1 | SQLite | `01_orders_loaded.parquet` | one order (20,000), raw values, child tables aggregated |
 | | | | `01_tables.csv`, `01_relationships.csv`, `01_checks.csv`, `01_load_comparison.csv` | one table / relationship / check / loading approach |
 | 2 Clean and label | Step 2 | Step 1 output, SQLite | `02_orders_clean.parquet` | one order (20,000), cleaned, with `label_status` and `delivered_after_estimate` (empty if unlabelled) |
