@@ -1,7 +1,7 @@
 label_status,approved,canceled,created,delivered,invoiced,not_reported,processing,shipped,unavailable,total
 cancelled,0,838,0,0,0,0,0,0,0,838
-impossible chronology,0,0,0,792,0,0,0,0,0,792
-labelled,0,0,0,16481,0,0,0,0,0,16481
+impossible chronology,0,0,0,782,0,0,0,0,0,782
+labelled,0,0,0,16491,0,0,0,0,0,16491
 no delivery date,0,0,0,338,0,0,0,0,0,338
 no estimated date,0,0,0,319,0,0,0,0,0,319
 not delivered,1,0,1,0,58,0,48,214,106,428

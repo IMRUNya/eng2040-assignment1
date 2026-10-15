@@ -10,10 +10,12 @@ outputs/02_change_summary.csv,0.002
 outputs/02_issues.csv,0.002
 outputs/02_items_clean.parquet,2.24
 outputs/02_label_accounting.csv,0.0
-outputs/02_orders_clean.parquet,3.448
+outputs/02_orders_clean.parquet,3.449
 outputs/02_payment_reconciliation.csv,0.0
+outputs/02_payment_residuals.csv,0.0
 outputs/02_size_evidence.csv,0.0
 outputs/02_unit_evidence.csv,0.0
+outputs/03_delivery_chain.csv,0.0
 outputs/03_q1_summary.csv,0.0
 outputs/03_sensitivity.csv,0.001
 outputs/03_state_priority.csv,0.003
@@ -30,5 +32,5 @@ outputs/chart_data/fig2_lead_time_region.csv,0.001
 outputs/chart_data/fig3_state_late_rate.csv,0.003
 outputs/environment.json,0.0
 outputs/figures/fig1_delays.png,0.099
-outputs/figures/fig2_lead_time.png,0.088
+outputs/figures/fig2_lead_time.png,0.09
 outputs/figures/fig3_states.png,0.054

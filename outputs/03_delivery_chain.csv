@@ -1,0 +1,6 @@
+state_group,orders,late_rate,handover_days_on_time,handover_days_late,transit_days_on_time,transit_days_late
+RJ,1953,0.117,1.828,2.849,7.952,30.953
+BA,496,0.125,1.789,2.159,12.989,30.593
+North-East (8 states),926,0.146,1.834,2.763,13.333,33.355
+SP,6246,0.044,1.787,4.237,4.205,14.17
+other states,6036,0.06,1.816,2.939,8.087,27.688

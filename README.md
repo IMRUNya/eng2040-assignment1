@@ -53,9 +53,9 @@ A full run takes about 2 seconds of pipeline time (about 10 s with kernel start)
 | | | | `02_items_clean.parquet` | one item (22,662) with cleaned product and seller attributes |
 | | | | `02_change_log.csv` | one changed value: table, key, column, old, new, rule |
 | | | | `02_change_summary.csv`, `02_issues.csv`, `02_label_accounting.csv` | one rule / problem / label reason |
-| | | | `02_unit_evidence.csv`, `02_payment_reconciliation.csv`, `02_size_evidence.csv` | evidence for the unit and sign fixes |
+| | | | `02_unit_evidence.csv`, `02_payment_reconciliation.csv`, `02_payment_residuals.csv`, `02_size_evidence.csv` | evidence for the unit and sign fixes |
 | 3 Explore | Step 3 | Step 2 output | `figures/fig1-3*.png`, `chart_data/*.csv` | chart data: one bin, month or state |
-| | | | `03_q1_summary.csv`, `03_state_priority.csv`, `03_sensitivity.csv` | one statistic / state / inclusion scenario |
+| | | | `03_q1_summary.csv`, `03_state_priority.csv`, `03_delivery_chain.csv`, `03_sensitivity.csv` | one statistic / state / state group / inclusion scenario |
 | 4 Features | Step 4 | Step 2 output | `04_features.parquet` | one retained order (16,481), 64 numeric features, no ID and no label |
 | | | | `04_labels.csv` | `order_id`, `delivered_after_estimate`, same row order as the features |
 | | | | `04_feature_dictionary.csv`, `04_exclusions.csv`, `04_feature_label_correlation.csv` | one feature / exclusion reason / feature |
@@ -79,7 +79,8 @@ Amounts are BRL, weights kg, volumes litres, times on the recorded local clock (
 ## Label
 
 `delivered_after_estimate` = 1 if the calendar date of delivery is after the calendar date of the estimate, 0 otherwise (delivery on the estimated date is on time).
-Only delivered orders with a valid delivery date, a valid estimate and a possible chronology are labelled. The reason for every other order is in `label_status`.
+Only delivered orders with a valid delivery date and a valid estimate are labelled; deliveries before purchase or exactly 7 days before approval (a shifted date) are not.
+Deliveries after purchase but before the recorded approval or carrier pickup keep their label and are marked in `chronology_flag`. The reason for every unlabelled order is in `label_status`.
 
 ## Database setup (from the supplied package)
 

@@ -10,5 +10,5 @@
   "pyarrow": "22.0.0",
   "matplotlib": "3.10.7",
   "psutil": "7.2.2",
-  "rss_after_imports_mb": 217.5
+  "rss_after_imports_mb": 220.1
 }

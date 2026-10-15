@@ -1,9 +1,9 @@
 ,0
-labelled orders,16481.0
+labelled orders,16491.0
 late orders,1107.0
-late rate,0.0672
+late rate,0.0671
 ci low,0.0634
-ci high,0.0711
+ci high,0.071
 delay median (days),7.0
 delay mean (days),10.5736
 delay p75 (days),13.0

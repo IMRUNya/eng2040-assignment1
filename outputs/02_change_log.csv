@@ -7104,6 +7104,7 @@ order_items,fd287f617bff10632a3d985e4be99f81/1,freight_value,15010.0,15.01,unit 
 order_items,fd5f4a26279e437735f4d5da152f5295/2,freight_value,24140.0,24.14,unit error: freight > 500 -> / 1000
 order_items,fe421e7d38d622aedc8ca97d58771ea6/1,freight_value,18270.0,18.27,unit error: freight > 500 -> / 1000
 order_items,ffc16cecff8dc037f60458f28d1c1ba5/2,freight_value,10040.0,10.04,unit error: freight > 500 -> / 1000
+order_items,8272b63d03f5f79c56e9e4120aec44ef/1,price,1200.0,1.2,unit error: 1000 x product median -> / 1000
 products,5eaa343860dc445b3fd43d1b682809fd,product_category_name,  ESPORTE_LAZER ,esporte_lazer,"strip spaces, lower case"
 products,5877301b00f95e3c6118738b293dfab3,product_category_name,  ELETRODOMESTICOS ,eletrodomesticos,"strip spaces, lower case"
 products,e869d449cc32881790ef9af9b4c670f8,product_category_name,  MOVEIS_ESCRITORIO ,moveis_escritorio,"strip spaces, lower case"

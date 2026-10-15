@@ -19,6 +19,7 @@ order_items,freight_value,above 500 BRL (x1000),473
 order_items,freight_value,missing,427
 order_items,product_id,not in products,910
 order_items,seller_id,not in sellers,893
+order_items,all but order_item_id,identical rows (several units of one product),1403
 products,category,upper case with spaces,370
 products,category,'unmapped_category' or missing,894
 products,name / description / photos,-1 placeholder,394

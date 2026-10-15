@@ -2,6 +2,7 @@ table,column,rule,values_changed
 order_items,freight_value,negative -> absolute value,458
 order_items,freight_value,unit error: freight > 500 -> / 1000,473
 order_items,price,negative -> absolute value,408
+order_items,price,unit error: 1000 x product median -> / 1000,1
 order_items,price,"unit error: price > 6,500 -> / 1000",416
 orders,customer_city,"strip spaces, lower case",860
 orders,customer_state,'ZZ'/missing -> state of zip prefix,1132
